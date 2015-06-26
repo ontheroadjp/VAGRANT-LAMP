@@ -1,12 +1,5 @@
 #!/bin/sh
 
-#vim インストール
-sudo apt-get update
-sudo apt-get install -y vim
-
-#git インストール
-sudo apt-get install -y git
-
 # MySQLのroot passwd
 MY_ROOT_PASSWD="PASSWORD"
 export MY_ROOT_PASSWD
@@ -35,11 +28,13 @@ CMD_MYSQL="mysql -u root -p"${MY_ROOT_PASSWD}" "${WP_DB_NAME}
 export CMD_MYSQL
 
 echo "Package Update"
-
 apt-get update >/dev/null 2>&1
 
 echo "Installing Tools"
 apt-get install -y unzip curl >/dev/null 2>&1
+apt-get install -y vim >/dev/null 2>&1
+apt-get install -y git >/dev/null 2>&1
+
 
 echo "Installing MySQL 5.5"
 
