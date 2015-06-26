@@ -4,7 +4,11 @@
 
 * Vagrant で動くスタンダードな LAMP 環境
 
-## 使い方
+## インストール
+
+1. [Vagrant](https://www.vagrantup.com/) のインストール
+2. [VirtualBox](https://www.virtualbox.org/wiki/Downloads) のインストール
+
 
 ```
 $ mkdir ~/workspace
